@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft } from 'lucide-react';
 import { quizQuestions } from '../data/quizQuestions';
 import { PersonalityType } from '../types';
 import { useApp } from '../context/AppContext';

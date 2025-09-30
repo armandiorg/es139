@@ -63,6 +63,26 @@ The app will be available at `http://localhost:5173/`
 npm run build
 ```
 
+### Deploy to GitHub Pages
+
+The app is configured to deploy automatically via GitHub Actions when you push to the main branch.
+
+**Live Demo:** `https://armandiorg.github.io/es139/`
+
+**Manual deployment:**
+```bash
+npm run deploy
+```
+
+**First-time GitHub Pages setup:**
+1. Go to your GitHub repository settings
+2. Navigate to Pages (under "Code and automation")
+3. Under "Build and deployment" > "Source", select "GitHub Actions"
+4. Push your code to the main branch
+5. The GitHub Actions workflow will automatically build and deploy
+
+**Note:** The app uses HashRouter (URLs will look like `/#/onboarding`) for GitHub Pages compatibility since GitHub Pages serves static files without server-side routing support.
+
 ## 🎨 Design
 
 - **Clean & Minimal**: Modern social networking aesthetic

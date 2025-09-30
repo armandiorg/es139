@@ -1,4 +1,4 @@
-import { PersonalityType, User, CompatibilityReport } from '../types';
+import { User, CompatibilityReport } from '../types';
 import { personalityDescriptions } from '../data/personalityTypes';
 
 export function calculateCompatibility(user1: User, user2: User): CompatibilityReport {

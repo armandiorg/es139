@@ -167,7 +167,7 @@ export default function Messages() {
                     </motion.div>
 
                     {/* Local messages */}
-                    {(localMessages[selectedConv] || []).map((msg) => (
+                    {selectedConv && (localMessages[selectedConv] || []).map((msg: { id: string; text: string; senderId: string; timestamp: Date }) => (
                       <motion.div
                         key={msg.id}
                         initial={{ opacity: 0, y: 10 }}

@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import { createContext, useContext, useState, ReactNode } from 'react';
 import { User, PersonalityType, HobbyCategory, VocationalGoal, SearchRequest, Match, Conversation } from '../types';
 
 interface AppState {

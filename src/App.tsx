@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
 import Onboarding from './pages/Onboarding';
 import Quiz from './pages/Quiz';
@@ -14,7 +14,7 @@ import FutureVision from './pages/FutureVision';
 function App() {
   return (
     <AppProvider>
-      <BrowserRouter>
+      <HashRouter>
         <div className="min-h-screen bg-gray-50">
           <Routes>
             <Route path="/" element={<Navigate to="/onboarding" replace />} />
@@ -30,7 +30,7 @@ function App() {
             <Route path="/future" element={<FutureVision />} />
           </Routes>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </AppProvider>
   );
 }
