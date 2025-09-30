@@ -14,7 +14,7 @@ import FutureVision from './pages/FutureVision';
 function App() {
   return (
     <AppProvider>
-      <HashRouter basename="/es139">
+      <HashRouter>
         <div className="min-h-screen bg-gray-50">
           <Routes>
             <Route path="/" element={<Navigate to="/onboarding" replace />} />
