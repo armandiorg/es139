@@ -75,11 +75,13 @@ npm run deploy
 ```
 
 **First-time GitHub Pages setup:**
-1. Go to your GitHub repository settings
-2. Navigate to Pages (under "Code and automation")
-3. Under "Build and deployment" > "Source", select "GitHub Actions"
-4. Push your code to the main branch
-5. The GitHub Actions workflow will automatically build and deploy
+1. Push your code to main branch (if not already done)
+2. Go to: https://github.com/armandiorg/es139/settings/pages
+3. Under "Build and deployment" → "Source" dropdown
+4. **CLICK the dropdown and SELECT "GitHub Actions"** (don't just look at it!)
+5. Wait 30 seconds, then visit your site
+
+**Important:** You MUST click and select "GitHub Actions" from the Source dropdown, or the site won't work. The workflow ran successfully, but GitHub Pages needs to be explicitly enabled by selecting this option.
 
 **Note:** The app uses HashRouter (URLs will look like `/#/onboarding`) for GitHub Pages compatibility since GitHub Pages serves static files without server-side routing support.
 
